@@ -1,3 +1,6 @@
+import sys
+sys.path.append('libraries')
+
 from flask import Flask,request
 from multiprocessing import Queue
 from threading import Thread
@@ -24,8 +27,6 @@ def getstatus():
 			"total_reward" : total_reward
 	}
 	return json.dumps(data,indent=4)
-
-
 
 # Algorithm
 d=10

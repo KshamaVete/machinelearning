@@ -1,3 +1,6 @@
+import sys
+sys.path.append('libraries')
+
 import requests
 import time
 
